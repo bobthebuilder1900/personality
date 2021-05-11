@@ -7,7 +7,6 @@ interface Props {
 }
 
 export const Results = ({ weight }: Props) => {
-  console.log(weight);
   return (
     <Container maxWidth="lg">
       <Box textAlign="center" my={2}>
