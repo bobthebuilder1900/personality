@@ -7,6 +7,7 @@ interface Props {
 }
 
 export const Results = ({ weight }: Props) => {
+  console.log(weight);
   return (
     <Container maxWidth="lg">
       <Box textAlign="center" my={2}>
@@ -22,7 +23,7 @@ export const Results = ({ weight }: Props) => {
           </Box>
         )}
 
-        {weight > 0 && weight < 10 && (
+        {weight > 0 && weight <= 10 && (
           <Box>
             <Typography variant="h2" gutterBottom>
               Chances are you are introverted.
