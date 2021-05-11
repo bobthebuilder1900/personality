@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, BoxProps, Container, Typography } from "@material-ui/core";
-import { QuestionStepper } from "../QuestionStepper";
+import { QuestionStepper } from "components/QuestionStepper";
 import { StyledButton } from "./styled";
 import useSWR from "swr";
-import { fetcher } from "../../utils/fetcher";
+import { fetcher } from "utils/fetcher";
 
 interface Props extends BoxProps {
   numOfQuestions?: number;

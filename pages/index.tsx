@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
-import { Introduction } from "../components/Introduction";
-import { Questionnaire } from "../components/Questionnaire";
+import Layout from "components/Layout";
+import { Introduction } from "components/Introduction";
+import { Questionnaire } from "components/Questionnaire";
 
 export default function Home() {
   return (

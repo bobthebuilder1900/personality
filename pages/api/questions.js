@@ -1,4 +1,4 @@
-import { getQuestionList } from "../../domain/questions/index";
+import { getQuestionList } from "domain/questions/index";
 
 export default async (req, res) => {
   const questions = await getQuestionList();

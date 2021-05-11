@@ -15,7 +15,7 @@ import {
 import React, { useState } from "react";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
-import { Results } from "../Result";
+import { Results } from "components/Result";
 
 export type AnswersType = {
   answer: string;

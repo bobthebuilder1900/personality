@@ -1,4 +1,4 @@
-import connectDb from "../../utils/dbConnect";
+import connectDb from "utils/dbConnect";
 import { QuestionList } from "./models";
 
 export const getQuestionList = async (): Promise<QuestionList[]> => {
