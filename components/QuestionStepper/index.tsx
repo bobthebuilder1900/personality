@@ -56,7 +56,7 @@ export const QuestionStepper = ({ questions, ...rest }: Props) => {
   };
 
   const getSteps = (questions: QuestionType[]) => {
-    return questions.map((item) => {
+    return questions.map((item: QuestionType) => {
       return item.question;
     });
   };
@@ -79,16 +79,18 @@ export const QuestionStepper = ({ questions, ...rest }: Props) => {
                 value={value[stepIndex] || ""}
                 onChange={(e) => handleChange(e, stepIndex)}
               >
-                {questions[stepIndex].answers.map((item, index) => {
-                  return (
-                    <FormControlLabel
-                      value={item.answer}
-                      control={<Radio />}
-                      label={item.answer}
-                      key={index}
-                    />
-                  );
-                })}
+                {questions[stepIndex].answers.map(
+                  (item: AnswersType, index) => {
+                    return (
+                      <FormControlLabel
+                        value={item.answer}
+                        control={<Radio />}
+                        label={item.answer}
+                        key={index}
+                      />
+                    );
+                  }
+                )}
               </RadioGroup>
             </FormControl>
           </>
@@ -111,6 +113,7 @@ export const QuestionStepper = ({ questions, ...rest }: Props) => {
   const handleReset = () => {
     // reset the initial state to an empty array;
     setValue([]);
+    setWeight([]);
     setActiveStep(0);
   };
 
