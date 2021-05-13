@@ -17,7 +17,12 @@ export const Results = ({ weight }: Props) => {
               buttons ;)
             </Typography>
             <Box my={4}>
-              <Image src="/fail.gif" width="480px" height="270px" />
+              <Image
+                src="/fail.gif"
+                width="480px"
+                height="270px"
+                alt="Developers"
+              />
             </Box>
           </Box>
         )}
@@ -28,7 +33,12 @@ export const Results = ({ weight }: Props) => {
               Chances are you are introverted.
             </Typography>
             <Box my={4}>
-              <Image src="/introvert.gif" width="480px" height="270px" />
+              <Image
+                src="/introvert.gif"
+                width="480px"
+                height="270px"
+                alt="Introverted"
+              />
             </Box>
           </Box>
         )}
@@ -39,7 +49,12 @@ export const Results = ({ weight }: Props) => {
               Chances are you are extroverted.
             </Typography>
             <Box my={4}>
-              <Image src="/extrovert.gif" width="480px" height="270px" />
+              <Image
+                src="/extrovert.gif"
+                width="480px"
+                height="270px"
+                alt="Extroverted"
+              />
             </Box>
           </Box>
         )}
