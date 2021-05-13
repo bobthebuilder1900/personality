@@ -13,8 +13,23 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@hooks/*": ["hooks/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "tsconfig.jest.json",
+    "jest.setup.js",
+    "jest.config.js",
+    "jest.config.js",
+    "jest.setup.js",
+    "jest.config.js"
+  ],
   "exclude": ["node_modules"]
 }
