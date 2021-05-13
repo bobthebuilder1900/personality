@@ -3,7 +3,7 @@ import { render, screen } from "utils/testing/test-utils";
 
 import { Introduction } from ".";
 
-describe("Introduction", () => {
+describe("<Introduction />", () => {
   beforeEach(() => {
     render(<Introduction />);
   });
