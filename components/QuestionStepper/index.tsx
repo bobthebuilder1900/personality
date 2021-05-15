@@ -16,7 +16,6 @@ import React, { useState } from "react";
 import Stepper from "@material-ui/core/Stepper";
 import Step from "@material-ui/core/Step";
 import { Results } from "components/Result";
-import { QuestionStepperContent } from "@components/QuestionStepperContent";
 
 export type AnswersType = {
   answer: string;
@@ -159,7 +158,6 @@ export const QuestionStepper = ({ questions, ...rest }: Props) => {
             <Box>
               <Card elevation={0}>
                 <CardContent>
-                  <QuestionStepperContent
                   {getStepContent(activeStep, questions)}
                 </CardContent>
               </Card>
